@@ -7,7 +7,7 @@ async function handler(request, response) {
    console.log('\nreceived', data)
   
    response.writeHead(200)
-   response.end(JSON.stringfy(data))
+   response.end(JSON.stringify(data))
 
    setTimeout(() => {
     throw new Error('will be handled on uncaught')
